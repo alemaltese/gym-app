@@ -1,38 +1,72 @@
+/* App.css */
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.PersonList {
+  margin: 20px auto; /* Centro la tabella orizzontalmente */
+  border-collapse: collapse; /* Unisce i bordi delle celle */
+  width: 80%; /* Imposta la larghezza della tabella */
+  max-width: 800px; /* Limita la larghezza massima della tabella */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.PersonList th, .PersonList td {
+  border: 1px solid #ddd; /* Aggiunge bordi alle celle */
+  padding: 8px; /* Aggiunge padding alle celle */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.PersonList th {
+  background-color: #f2f2f2; /* Colore di sfondo delle intestazioni */
+  text-align: center; /* Centra il testo nelle intestazioni */
 }
 
-.App-link {
-  color: #61dafb;
+.PersonList tr:nth-child(even) {
+  background-color: #f9f9f9; /* Colore di sfondo per le righe pari */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.PersonList tr:hover {
+  background-color: #ddd; /* Colore di sfondo al passaggio del mouse */
+}
+
+.PersonList td {
+  text-align: center; /* Centra il testo nelle celle */
+}
+
+.PersonList tr.selected {
+  background-color: #d0e0ff; /* Colore di sfondo per la riga selezionata */
+}
+
+.actions {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.actions button {
+  margin: 0 5px; /* Aggiunge un margine tra i pulsanti */
+  padding: 5px 10px; /* Padding dei pulsanti */
+  border: none;
+  background-color: #4CAF50; /* Colore di sfondo verde */
+  color: white; /* Colore del testo */
+  cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+}
+
+.actions button:hover {
+  background-color: #45a049; /* Colore di sfondo al passaggio del mouse */
+}
+
+.actions button:focus {
+  outline: none; /* Rimuove il contorno del focus */
+}
+
+.actions button.delete {
+  background-color: #f44336; /* Colore di sfondo rosso per DELETE */
+}
+
+.actions button.delete:hover {
+  background-color: #e53935; /* Colore di sfondo rosso al passaggio del mouse */
+}
+
+.editable {
+  background-color: #ffff99; /* Colore di sfondo giallo chiaro per celle modificabili */
 }
