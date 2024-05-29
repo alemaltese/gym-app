@@ -1,6 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import '../style.css';
 import { useState } from 'react';
+
 
 class Person {
   constructor(name, surname, email, age, subscription) {
