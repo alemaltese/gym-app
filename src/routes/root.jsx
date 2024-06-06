@@ -1,12 +1,14 @@
+import React from "react";
+import "./root.css";
+
 export default function Home() {
     return (
-       <div>
-         <nav>
-           <ul>
-             <li><a href={`/`}>Home</a></li>
-             <li><a href={`/members`}>Gym-app</a></li>
-           </ul>
-         </nav>
-       </div>
-    );
- }
+        <div className="home-container">
+            <h1>HOME</h1>
+            <div className="button-container">
+                <a href="/" className="home-button">Home</a>
+                <a href="/members" className="gym-button">Gym-app</a>
+            </div>
+        </div>
+    );
+}
