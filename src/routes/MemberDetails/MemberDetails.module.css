@@ -1,0 +1,98 @@
+.member_details {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.member_details h2 {
+    text-align: center;
+    color: #333;
+}
+
+.member_details table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.member_details th, .member_details td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.member_details th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.member_details td {
+    color: #555;
+}
+
+.member_details button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.member_details button:hover {
+    opacity: 0.8;
+}
+
+.member_details .delete_button {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.member_details .edit_button {
+    background-color: #2ecc71;
+    color: white;
+}
+
+.member_details .back_button {
+    background-color: #3498db;
+    color: white;
+}
+
+.member_details .edit_mode {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.edit_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.member_details .edit_mode label {
+    font-weight: bold;
+    color: #333;
+}
+
+.member_details .edit_mode input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+input{
+    width: 50%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}

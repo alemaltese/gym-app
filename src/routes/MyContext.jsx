@@ -13,6 +13,7 @@ class Person {
     }
 }
 
+
 const MyProvider = ({ children }) => {
   const [people, setPeople] = useState([
     new Person(1, 'Mario', 'Rossi', "mario@gmail.com", 40, "Basic"),
@@ -28,8 +29,12 @@ const MyProvider = ({ children }) => {
     setPeople(prevPeople => prevPeople.map(p => p.id == updatedPerson.id ? updatedPerson : p));
   };
 
+  const addPerson = (newPerson) => {
+    setPeople([...people, newPerson]);
+  };
+
   return (
-    <MyContext.Provider value={{ people, setPeople, removePerson, updatePerson }}>
+    <MyContext.Provider value={{ people, setPeople, removePerson, updatePerson, addPerson }}>
       {children}
     </MyContext.Provider>
   );
